@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Web Page of Vladimirs Ozerkins</title>
@@ -19,9 +20,7 @@
 <body>
 
 <h1 id="FirstWebPage"> First Web Page of Vladimirs Ozerkins </h1>
-
-<img src="images/photo_2026-06-03_12-53-27.jpg" width="450" height="600" alt="Vladimirs Ozerkins Photo">
-
+<button class="btn btn-primary">Click Me</button>
 <style>
     h2 {
         font-size: 24px;
@@ -37,23 +36,36 @@
     }
 </style>
 
-<p><h2> Welcome to my first web page! </h2></p>
+<h2> Welcome to my first web page! </h2>
+<section class="container">
+    <div class="row">
+        <div class="col-md-6"><img src="images/photo_2026-06-03_12-53-27.jpg" max-width="450px" max-height="500px" alt="Vladimirs Ozerkins Photo"></div>
+    </div>
+        <div class="col-md-6">
+            <p>
+            I would like to introduce myself first.
+            My Name is Vladimirs , I'm 27. I was born in Latvia, Daugavpils and now I'm living in Switzerland in small town named Glattbrugg near to Zurich.
+            Since 01.02.2024 I'm started to learn Software Development in IU and I'm enjoying it a lot and I'm thrilled to finish it ASAP.
+            </p>
+        </div>
+    </div>
+</section>
 
-I'm very excited to do this web page. I would like to introduce myself first. 
-My Name is Vladimirs , I'm 27. I was born in Latvia, Daugavpils and now I'm living in Switzerland in small town named Glattbrugg near to Zurich.
-Since 01.02.2024 I'm started to learn Software Development in IU and I'm enjoying it a lot and I'm thrilled to finish it ASAP.
+<div class="row">
+<div class="col"><img src="images/IU_logo.png" width="300" height="300" alt="IU Logo"><br></div>
 
-<p><img src="images/IU_logo.png" width="300" height="300" alt="IU Logo"></p>
-
-Now I'm learning HTML and CSS and hope that this Web Page will be successfully completed and going to be the start of my development portfolio. <br>
+<div class="col">Now I'm learning HTML and CSS and hope that this Web Page will be successfully completed and going to be the start of my development portfolio. <br></div>
 
 <!-- To do : - Add more information about myself -->
+<div class="col">
+    Here you can find my LinkedIn profile and GitHub profile!<br>
+    <a href="https://www.linkedin.com/in/vladimirs-ozerkins-23625b2b2/">My LinkedIn Profile</a><br>
+    <a href="https://github.com/vladmosq">My GitHub Profile</a>
+</div>
 
-Here you can find my LinkedIn profile and GitHub profile!<br>
-<a href="https://www.linkedin.com/in/vladimirs-ozerkins-23625b2b2/">My LinkedIn Profile</a><br>
-<a href="https://github.com/vladmosq">My GitHub Profile</a>
+<div class="col">
+    <h3> Courses which exam i have passed </h3>
 
-<h3> Courses which exam i have passed </h3>
 
 <ul>
     <li> Introduction to Computer Science </li>
@@ -67,7 +79,9 @@ Here you can find my LinkedIn profile and GitHub profile!<br>
     <li> Requirements Engineering </li>
     <li> Database Modeling and Database Systems </li>
 </ul>
+</div>
 
+<div class="">
 Now I'm waiting for the IT Architecture Management course result and meanwhile I'm doing Web Application Development course and I'm really enjoying it. I hope that I will pass it successfully and add it to my portfolio as well.
 
 <h4> Courses which still need to be completed in this semester </h4>
@@ -76,7 +90,9 @@ Now I'm waiting for the IT Architecture Management course result and meanwhile I
     <li> Algorithms, Data Structures, and Programming Languages </li>
     <li> Collaborative Work </li>
 </ol>
+</div>
 
+<div class="row">
 <h4> <p> My Body Parameters </p></h4>
 
 <table>
@@ -93,7 +109,9 @@ Now I'm waiting for the IT Architecture Management course result and meanwhile I
         <td> Blonde </td>
     </tr>
 </table>
+</div>
 
+<div class="row">
 <h4>Website visitors</h4>
 
 <form>
@@ -113,5 +131,6 @@ Now I'm waiting for the IT Architecture Management course result and meanwhile I
     <input type="text" id="visitorCountry" name="visitorCountry" value="Switzerland"><br>
     <input type="submit" value="Submit">
 </form>
-
+</div>
+</div>
 <!-- To do : - Add JavaScript code to handle form submission and display a thank you message to the visitor. -->
