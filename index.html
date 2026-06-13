@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Web Page of Vladimirs Ozerkins</title>
@@ -20,7 +20,7 @@
 <body>
 
 <h1 id="FirstWebPage"> First Web Page of Vladimirs Ozerkins </h1>
-<button class="btn btn-primary">Click Me</button>
+
 <style>
     h2 {
         font-size: 24px;
@@ -35,36 +35,54 @@
         background-color: lightgray;
     }
 </style>
-
 <h2> Welcome to my first web page! </h2>
+
 <section class="container">
     <div class="row">
-        <div class="col-md-6"><img src="images/photo_2026-06-03_12-53-27.jpg" max-width="450px" max-height="500px" alt="Vladimirs Ozerkins Photo"></div>
-    </div>
-        <div class="col-md-6">
+        <div class="col-12 col-md-6 col-lg-4"><img src="images/photo_2026-06-03_12-53-27.jpg" class="img-fluid" alt="Vladimirs Ozerkins Photo">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
             <p>
             I would like to introduce myself first.
-            My Name is Vladimirs , I'm 27. I was born in Latvia, Daugavpils and now I'm living in Switzerland in small town named Glattbrugg near to Zurich.
-            Since 01.02.2024 I'm started to learn Software Development in IU and I'm enjoying it a lot and I'm thrilled to finish it ASAP.
+            My Name is Vladimirs , I'm 27. I was born in Latvia, Daugavpils and now I'm living in Switzerland in a small town named Glattbrugg near to Zurich.
+            Since 01.02.2024 I've started learning Software Development in IU. I'm enjoying it a lot and I'm thrilled to finish it ASAP.
             </p>
         </div>
     </div>
 </section>
 
+<section class="container">
 <div class="row">
-<div class="col"><img src="images/IU_logo.png" width="300" height="300" alt="IU Logo"><br></div>
-
-<div class="col">Now I'm learning HTML and CSS and hope that this Web Page will be successfully completed and going to be the start of my development portfolio. <br></div>
-
-<!-- To do : - Add more information about myself -->
-<div class="col">
-    Here you can find my LinkedIn profile and GitHub profile!<br>
-    <a href="https://www.linkedin.com/in/vladimirs-ozerkins-23625b2b2/">My LinkedIn Profile</a><br>
-    <a href="https://github.com/vladmosq">My GitHub Profile</a>
+    <style>
+        .IU_logo {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+<div class="col-12 col-md-4 col-lg-3"><img src="images/IU_logo.png" class="IU_logo" alt="IU Logo"><br>
 </div>
 
-<div class="col">
-    <h3> Courses which exam i have passed </h3>
+<div class="col-12 col-md-8 col-lg-9">
+Now I'm learning HTML and CSS and hope that this Web Page will be successfully completed and going to be the start of my development portfolio. <br>
+
+<!-- To do : - Add more information about myself -->
+
+    Here you can find my LinkedIn profile and GitHub profile!<br>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <button class="btn btn-primary"><a href="https://www.linkedin.com/in/vladimirs-ozerkins-23625b2b2/" style="color: white; text-decoration: none;">My LinkedIn Profile</a></button>
+        </div>
+        <div class="col-12 col-md-6">
+            <button class="btn btn-primary"><a href="https://github.com/vladmosq" style="color: white; text-decoration: none;">My GitHub Profile</a></button>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<div class="row">
+<div class="col-12 col-md-4 col-lg-3">
+    <h3> Courses which exam I have passed </h3>
 
 
 <ul>
@@ -81,15 +99,22 @@
 </ul>
 </div>
 
-<div class="">
-Now I'm waiting for the IT Architecture Management course result and meanwhile I'm doing Web Application Development course and I'm really enjoying it. I hope that I will pass it successfully and add it to my portfolio as well.
+<div class="col-12 col-md-4 col-lg-3">
+    <h3> Courses which are in progress </h3>
+<ul>
+    <li> IT Architecture Management </li>
+    <li> Web Application Development </li>
+</ul>
+</div>
 
+<div class="col-12 col-md-4 col-lg-3">
 <h4> Courses which still need to be completed in this semester </h4>
 
 <ol>
     <li> Algorithms, Data Structures, and Programming Languages </li>
     <li> Collaborative Work </li>
 </ol>
+</div>
 </div>
 
 <div class="row">
@@ -114,7 +139,7 @@ Now I'm waiting for the IT Architecture Management course result and meanwhile I
 <div class="row">
 <h4>Website visitors</h4>
 
-<form>
+<form action="https://formspree.io/f/xpqeojpj" method="POST">
     <label for="visitorName">Enter your name:</label><br>
     <input type="text" id="visitorName" name="visitorName" value="Vladimirs"><br>
     <label for="visitorLastName">Enter your last name:</label><br>
@@ -129,7 +154,7 @@ Now I'm waiting for the IT Architecture Management course result and meanwhile I
     <input type="text" id="visitorCity" name="visitorCity" value="Glattbrugg"><br>
     <label for="visitorCountry">Enter your country:</label><br>
     <input type="text" id="visitorCountry" name="visitorCountry" value="Switzerland"><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class="btn btn-primary">
 </form>
 </div>
 </div>
