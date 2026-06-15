@@ -7,10 +7,10 @@
     <title>First Web Page of Vladimirs Ozerkins</title>
     <style>
         #FirstWebPage {
-            text-align: center;
+             text-align: center;
             background-color: lightblue;
-            margin-left : 150px;
-            margin-right : 150px;
+            width: 80%;
+            margin: 0 auto;
         }
         #FirstWebPage:hover {
             background-color: lightgreen;
@@ -18,33 +18,32 @@
     </style>
 </head>
 <body>
-<data class="container">
+
     <div class="row">
         <div class="col-12">
 <h1 id="FirstWebPage"> First Web Page of Vladimirs Ozerkins </h1></div>
 </div>
-</div>
+
 
 <style>
     h2 {
-        font-size: 24px;
         text-align: center;
         color: darkblue;
         /* BOX MODEL */
         border: 2px solid black;
-        margin-right: 200px;
-        margin-left: 200px;
-        margin-top: 100px;
-        margin-bottom: 100px;
         background-color: lightgray;
+        width: 60%;
+        margin: 50px auto;
     }
 </style>
 
-<div class="row">
-    <div class="col-12">
+
+<div class="row justify-content-center">
+    <div class="col-10 col-md-6 col-lg-4">
         <h2> Welcome to my first web page! </h2>
     </div>
 </div>
+
 
 <section class="container">
     <div class="row">
@@ -126,8 +125,19 @@ Now I'm learning HTML and CSS and hope that this Web Page will be successfully c
 </div>
 </div>
 
-<div class="row">
-<h4> <p> My Body Parameters </p></h4>
+
+<h4> My Body Parameters </h4>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+</style>
 
 <table>
     <tr>
@@ -143,9 +153,9 @@ Now I'm learning HTML and CSS and hope that this Web Page will be successfully c
         <td> Blonde </td>
     </tr>
 </table>
-</div>
 
-<div class="row">
+
+
 <h4>Website visitors</h4>
 
 <form action="https://formspree.io/f/xpqeojpj" method="POST">
@@ -165,6 +175,3 @@ Now I'm learning HTML and CSS and hope that this Web Page will be successfully c
     <input type="text" id="visitorCountry" name="visitorCountry" value="Switzerland"><br>
     <input type="submit" value="Submit" class="btn btn-primary">
 </form>
-</div>
-</div>
-<!-- To do : - Add JavaScript code to handle form submission and display a thank you message to the visitor. -->
