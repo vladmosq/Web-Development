@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* --- MINT GLASSMORPHISM DESIGN SYSTEM --- */
+:root {
+    --bg-body: linear-gradient(135deg, #E6F4EA 0%, #C4ECD4 100%);
+    --bg-container: rgba(255, 255, 255, 0.45);
+    --bg-card: rgba(255, 255, 255, 0.6);
+    --bg-card-hover: rgba(255, 255, 255, 0.85);
+    --text-primary: #183B2B;
+    --text-secondary: #3D614E;
+    --accent-color: #3FA369;
+    --accent-hover: #2E8551;
+    --accent-light: rgba(63, 163, 105, 0.15);
+    --border-color: rgba(255, 255, 255, 0.4);
+    --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
+    --card-shadow-hover: 0 12px 40px 0 rgba(31, 38, 135, 0.12);
+    --font-title: 'Outfit', sans-serif;
+    --font-body: 'Outfit', sans-serif;
+    --border-radius: 20px;
+    --btn-text-color: #FFFFFF;
+    --backdrop-blur: blur(16px);
+    --transition-speed: 0.4s;
+    --input-bg: rgba(255, 255, 255, 0.5);
+    --input-focus-border: #3FA369;
+    --badge-passed-bg: rgba(63, 163, 105, 0.2);
+    --badge-passed-color: #183B2B;
+    --badge-progress-bg: rgba(245, 158, 11, 0.2);
+    --badge-progress-color: #78350F;
+    --badge-todo-bg: rgba(107, 114, 128, 0.15);
+    --badge-todo-color: #374151;
+}
+
+/* --- GENERAL RESET & LAYOUT --- */
+
+body {
+    background: var(--bg-body);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Transition for layout elements */
+.card, .container-main, input, select, button, table, th, td, a {
+    transition: all var(--transition-speed) ease;
+}
+
+.container-main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    background: var(--bg-container);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-title);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.2rem;
+}
+
+/* Micro-animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* --- HERO SECTION & HEADER --- */
+
+#FirstWebPage {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+/* Welcome Text Box Model */
+.welcome-box {
+    text-align: center;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+    padding: 15px 30px;
+    border-radius: var(--border-radius);
+    margin: 30px auto;
+    font-size: 1.4rem;
+    max-width: 80%;
+    color: var(--text-primary);
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+}
+
+.welcome-box:hover {
+    transform: scale(1.02);
+    box-shadow: var(--card-shadow-hover);
+}
+
+/* --- BIO & ABOUT SECTION --- */
+
+.profile-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    border: 3px solid var(--border-color);
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.profile-img-container:hover img {
+    transform: scale(1.05);
+}
+
+.bio-card {
+    background: var(--bg-card);
+    padding: 24px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio-card p {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* Logo container styling */
+.logo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+.IU_logo {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-card:hover .IU_logo {
+    transform: scale(1.08);
+}
+
+/* Links & Buttons */
+.portfolio-actions {
+    background: var(--bg-card);
+    padding: 24px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+}
+
+.portfolio-actions p {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.btn-custom {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: var(--btn-text-color) !important;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--accent-hover) !important;
+    border-color: var(--accent-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--accent-light);
+}
+
+.btn-custom a {
+    color: inherit !important;
+    text-decoration: none !important;
+    display: block;
+    width: 100%;
+}
+
+/* --- COURSES MODULE --- */
+
+.course-card {
+    background: var(--bg-card);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: 24px;
+    height: 100%;
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.course-card h3, .course-card h4 {
+    font-size: 1.25rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.course-item {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    background: var(--bg-container);
+    border-radius: calc(var(--border-radius) - 4px);
+    border-left: 4px solid var(--accent-color);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.badge-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.badge-passed {
+    background-color: var(--badge-passed-bg);
+    color: var(--badge-passed-color);
+}
+
+.badge-progress {
+    background-color: var(--badge-progress-bg);
+    color: var(--badge-progress-color);
+}
+
+.badge-todo {
+    background-color: var(--badge-todo-bg);
+    color: var(--badge-todo-color);
+}
+
+/* --- BODY PARAMETERS --- */
+
+.parameters-section {
+    margin-top: 40px;
+}
+
+.table-custom-wrapper {
+    overflow-x: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+}
+
+.table-custom {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+}
+
+.table-custom th {
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
+    font-family: var(--font-title);
+    font-weight: 600;
+    padding: 14px 18px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.table-custom td {
+    padding: 14px 18px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.table-custom tr:hover td {
+    background-color: var(--bg-card-hover);
+}
+
+/* --- WEBSITE VISITORS FORM --- */
+
+.form-section {
+    margin-top: 40px;
+}
+
+.form-wrapper {
+    background: var(--bg-card);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+}
+
+.form-group-custom {
+    margin-bottom: 20px;
+}
+
+.form-group-custom label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: var(--text-secondary);
+    display: inline-block;
+}
+
+.input-custom {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: calc(var(--border-radius) - 4px);
+    color: var(--text-primary);
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-custom:focus {
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+.input-custom::placeholder {
+    color: rgba(24, 59, 43, 0.45);
+    opacity: 1; /* Override default browser styles if any */
+}
+
+
+select.input-custom {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23183B2B' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 12px;
+    padding-right: 40px;
+}
+
+.form-submit-wrapper {
+    margin-top: 30px;
+}
+
+/* --- RESPONSIVE STYLE ADJUSTMENTS --- */
+
+@media (max-width: 768px) {
+    .container-main {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    
+    #FirstWebPage {
+        font-size: 2.2rem;
+    }
+    
+    .welcome-box {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+}

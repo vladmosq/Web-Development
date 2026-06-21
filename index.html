@@ -1,178 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Web Page of Vladimirs Ozerkins</title>
-    <style>
-        #FirstWebPage {
-             text-align: center;
-            background-color: lightblue;
-            width: 80%;
-            margin: 0 auto;
-        }
-        #FirstWebPage:hover {
-            background-color: lightgreen;
-        }
-    </style>
+    <!-- Bootstrap 5 local -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="row">
-        <div class="col-12">
-<h1 id="FirstWebPage"> First Web Page of Vladimirs Ozerkins </h1></div>
-</div>
+    <!-- MAIN CONTAINER -->
+    <main class="container-main animated-fade-in my-5">
+        
+        <!-- HERO SECTION -->
+        <section class="row text-center mb-4">
+            <div class="col-12">
+                <h1 id="FirstWebPage">First Web Page of Vladimirs Ozerkins</h1>
+                <div class="welcome-box">
+                    Welcome to my first web page!
+                </div>
+            </div>
+        </section>
 
+        <!-- INTRODUCTION SECTION -->
+        <section class="container mb-5">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-5 col-lg-4">
+                    <div class="profile-img-container">
+                        <img src="images/photo_2026-06-03_12-53-27.jpg" class="img-fluid" alt="Vladimirs Ozerkins Photo">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-8">
+                    <div class="bio-card">
+                        <p>
+                            I would like to introduce myself first.
+                            My name is Vladimirs, I'm 27. I was born in Latvia, Daugavpils and now I'm living in Switzerland in a small town named Glattbrugg near to Zurich.
+                            Since 01.02.2024 I've started learning Software Development at IU. I'm enjoying it a lot and I'm thrilled to finish it ASAP.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<style>
-    h2 {
-        text-align: center;
-        color: darkblue;
-        /* BOX MODEL */
-        border: 2px solid black;
-        background-color: lightgray;
-        width: 60%;
-        margin: 50px auto;
-    }
-</style>
+        <!-- PORTFOLIO SECTION -->
+        <section class="container mb-5">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="logo-card">
+                        <img src="images/IU_logo.png" class="IU_logo" alt="IU Logo">
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="portfolio-actions">
+                        <p>
+                            Now I'm learning HTML and CSS and hope that this Web Page will be successfully completed and going to be the start of my development portfolio.
+                        </p>
+                        <p class="text-secondary small">
+                            <!-- To do : - Add more information about myself -->
+                            Here you can find my LinkedIn profile and GitHub profile!
+                        </p>
+                        <div class="row g-3 mt-2">
+                            <div class="col-12 col-md-6">
+                                <a href="https://www.linkedin.com/in/vladimirs-ozerkins-23625b2b2/" target="_blank" class="btn-custom">My LinkedIn Profile</a>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <a href="https://github.com/vladmosq" target="_blank" class="btn-custom">My GitHub Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- COURSES SECTION -->
+        <section class="container mb-5">
+            <div class="row g-4">
+                <!-- Passed Courses -->
+                <div class="col-12 col-md-4">
+                    <div class="course-card">
+                        <h3>Passed Courses</h3>
+                        <ul class="course-list">
+                            <li class="course-item">Introduction to Computer Science <span class="badge-status badge-passed">Passed</span></li>
+                            <li class="course-item">Object-Oriented Programming with Java <span class="badge-status badge-passed">Passed</span></li>
+                            <li class="course-item">Data Structures and Java Class Library <span class="badge-status badge-passed">Passed</span></li>
+                            <li class="course-item">Introduction to Academic Work <span class="badge-status badge-passed">Passed</span></li>
+                            <li class="course-item">Software Engineering Principles <span class="badge-status badge-passed">Passed</span></li>
+                            <li class="course-item">Engineering: Branches, Methods, Trends <span class="badge-status badge-passed">Passed</span></li>
+                            <li class="course-item">Software Quality Assurance <span class="badge-status badge-passed">Passed</span></li>
+                            <li class="course-item">Specification <span class="badge-status badge-passed">Passed</span></li>
+                            <li class="course-item">Requirements Engineering <span class="badge-status badge-passed">Passed</span></li>
+                            <li class="course-item">Database Modeling and Systems <span class="badge-status badge-passed">Passed</span></li>
+                        </ul>
+                    </div>
+                </div>
 
-<div class="row justify-content-center">
-    <div class="col-10 col-md-6 col-lg-4">
-        <h2> Welcome to my first web page! </h2>
-    </div>
-</div>
+                <!-- In Progress Courses -->
+                <div class="col-12 col-md-4">
+                    <div class="course-card">
+                        <h3>In Progress</h3>
+                        <ul class="course-list">
+                            <li class="course-item">IT Architecture Management <span class="badge-status badge-progress">In Progress</span></li>
+                            <li class="course-item">Web Application Development <span class="badge-status badge-progress">In Progress</span></li>
+                        </ul>
+                    </div>
+                </div>
 
+                <!-- To Be Completed Courses -->
+                <div class="col-12 col-md-4">
+                    <div class="course-card">
+                        <h4>To Complete</h4>
+                        <ol class="course-list">
+                            <li class="course-item">Algorithms, Data Structures & Languages <span class="badge-status badge-todo">Todo</span></li>
+                            <li class="course-item">Collaborative Work <span class="badge-status badge-todo">Todo</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="container">
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4"><img src="images/photo_2026-06-03_12-53-27.jpg" class="img-fluid" alt="Vladimirs Ozerkins Photo">
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <p>
-            I would like to introduce myself first.
-            My Name is Vladimirs , I'm 27. I was born in Latvia, Daugavpils and now I'm living in Switzerland in a small town named Glattbrugg near to Zurich.
-            Since 01.02.2024 I've started learning Software Development in IU. I'm enjoying it a lot and I'm thrilled to finish it ASAP.
-            </p>
-        </div>
-    </div>
-</section>
+        <!-- BODY PARAMETERS SECTION -->
+        <section class="container mb-5 parameters-section">
+            <h4 class="mb-3">My Body Parameters</h4>
+            <div class="table-custom-wrapper">
+                <table class="table-custom">
+                    <thead>
+                        <tr>
+                            <th>Height</th>
+                            <th>Weight</th>
+                            <th>Eye Color</th>
+                            <th>Hair Color</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>188 cm</td>
+                            <td>88 kg</td>
+                            <td>Blue</td>
+                            <td>Blonde</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-<section class="container">
-<div class="row">
-    <style>
-        .IU_logo {
-            width: 200px;
-            height: auto;
-        }
-    </style>
-<div class="col-12 col-md-4 col-lg-3"><img src="images/IU_logo.png" class="IU_logo" alt="IU Logo"><br>
-</div>
+        <!-- WEBSITE VISITORS SECTION -->
+        <section class="container mb-4 form-section">
+            <h4 class="mb-3">Website Visitors</h4>
+            <div class="form-wrapper">
+                <form action="https://formspree.io/f/xpqeojpj" method="POST">
+                    <div class="row">
+                        <div class="col-12 col-md-6 form-group-custom">
+                            <label for="visitorName">Enter your name:</label>
+                            <input type="text" id="visitorName" name="visitorName" class="input-custom" placeholder="Vladimirs" required>
+                        </div>
+                        <div class="col-12 col-md-6 form-group-custom">
+                            <label for="visitorLastName">Enter your last name:</label>
+                            <input type="text" id="visitorLastName" name="visitorLastName" class="input-custom" placeholder="Ozerkins" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-4 form-group-custom">
+                            <label for="visitorsSex">Select your sex:</label>
+                            <select id="visitorsSex" name="visitorsSex" class="input-custom" required>
+                                <option value="" disabled selected hidden>Select your sex...</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 form-group-custom">
+                            <label for="visitorCity">Enter your city:</label>
+                            <input type="text" id="visitorCity" name="visitorCity" class="input-custom" placeholder="Glattbrugg" required>
+                        </div>
+                        <div class="col-12 col-md-4 form-group-custom">
+                            <label for="visitorCountry">Enter your country:</label>
+                            <input type="text" id="visitorCountry" name="visitorCountry" class="input-custom" placeholder="Switzerland" required>
+                        </div>
+                    </div>
 
-<div class="col-12 col-md-8 col-lg-9">
-Now I'm learning HTML and CSS and hope that this Web Page will be successfully completed and going to be the start of my development portfolio. <br>
+                    <div class="form-submit-wrapper text-end">
+                        <input type="submit" value="Submit Registration" class="btn-custom border-0 w-auto px-5">
+                    </div>
+                </form>
+            </div>
+        </section>
 
-<!-- To do : - Add more information about myself -->
+    </main>
 
-    Here you can find my LinkedIn profile and GitHub profile!<br>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <button class="btn btn-primary"><a href="https://www.linkedin.com/in/vladimirs-ozerkins-23625b2b2/" style="color: white; text-decoration: none;">My LinkedIn Profile</a></button>
-        </div>
-        <div class="col-12 col-md-6">
-            <button class="btn btn-primary"><a href="https://github.com/vladmosq" style="color: white; text-decoration: none;">My GitHub Profile</a></button>
-        </div>
-    </div>
-</div>
-</div>
-</section>
-
-<div class="row">
-<div class="col-12 col-md-4 col-lg-3">
-    <h3> Courses I passed </h3>
-
-
-<ul>
-    <li> Introduction to Computer Science </li>
-    <li> Object-Oriented Programming with Java </li>
-    <li> Data Structures and Java Class Library </li>
-    <li> Introduction to Academic Work </li>
-    <li> Software Engineering Principles </li>
-    <li> Engineering: Branches, Methods, Applications, Trends </li>
-    <li> Software Quality Assurance </li>
-    <li> Specification </li>
-    <li> Requirements Engineering </li>
-    <li> Database Modeling and Database Systems </li>
-</ul>
-</div>
-
-<div class="col-12 col-md-4 col-lg-3">
-    <h3> Courses in progress </h3>
-<ul>
-    <li> IT Architecture Management </li>
-    <li> Web Application Development </li>
-</ul>
-</div>
-
-<div class="col-12 col-md-4 col-lg-3">
-<h4> Courses to be completed </h4>
-
-<ol>
-    <li> Algorithms, Data Structures, and Programming Languages </li>
-    <li> Collaborative Work </li>
-</ol>
-</div>
-</div>
-
-
-<h4> My Body Parameters </h4>
-
-<style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-</style>
-
-<table>
-    <tr>
-        <th> Height </th>
-        <th> Weight </th>
-        <th> Eye Color </th>
-        <th> Hair Color </th>
-    </tr>
-    <tr>
-        <td> 188 cm </td>
-        <td> 88 kg </td>
-        <td> Blue </td>
-        <td> Blonde </td>
-    </tr>
-</table>
-
-
-
-<h4>Website visitors</h4>
-
-<form action="https://formspree.io/f/xpqeojpj" method="POST">
-    <label for="visitorName">Enter your name:</label><br>
-    <input type="text" id="visitorName" name="visitorName" value="Vladimirs"><br>
-    <label for="visitorLastName">Enter your last name:</label><br>
-    <input type="text" id="visitorLastName" name="visitorLastName" value="Ozerkins"><br>
-    <label for="visitorsSex">Select your sex:</label><br>
-    <select id="visitorsSex" name="visitorsSex">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
-    </select><br>
-    <label for="visitorCity">Enter your city:</label><br>
-    <input type="text" id="visitorCity" name="visitorCity" value="Glattbrugg"><br>
-    <label for="visitorCountry">Enter your country:</label><br>
-    <input type="text" id="visitorCountry" name="visitorCountry" value="Switzerland"><br>
-    <input type="submit" value="Submit" class="btn btn-primary">
-</form>
+</body>
+</html>
